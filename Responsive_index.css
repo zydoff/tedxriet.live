@@ -1,0 +1,261 @@
+/* __________________________________________________________________________________________________________ */
+/*_______________________________________________ RESPONSIVE FOR Mobile SECREENS_______________________________ */
+/* _____________________________________________________________________________________________________________ */
+
+@media only screen and (max-width: 480px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .w-75 {
+    max-width: 200px;
+  }
+  
+  .illustration-left-homepage {
+    height: 90%!important;
+    width: 100%!important;
+}
+
+  .main {
+    font-size: 50%;
+    margin-left: -40%;
+    max-width: 150%;
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
+  }
+  .submain {
+    max-width: 150%;
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
+  }
+
+  .center {
+    margin-top: 5%;
+  }
+
+  button.fancy {
+    margin-top: 5%;
+  }
+
+  .homepage {
+    margin-top: 40%;
+    position: relative;
+  }
+
+  .hero-pg-text {
+
+    position: relative;
+    left: 4%;
+    width: 90% !important;
+    margin: auto;
+  }
+
+  .homepage .btn {
+    border-radius: 8px;
+    font-size: 0.8rem;
+  }
+
+  .homepage .btn {
+    
+    font-size: 0.8rem;
+    color: #ffffff;
+  padding: 2px 12px;
+    
+  
+  }
+  
+  nav {
+    max-width: 100%;
+  }
+  
+
+  .homepage .btn-participate {
+    background-color: #e62b1e;
+    color: #ffffff;
+    font-size: 0.8rem;
+    border-top-right-radius: 8px 8px !important;
+    border-bottom-right-radius: 8px 8px !important;
+  }
+
+  .navbar-custom button {
+    padding: 5px 10px;
+    /* margin-left: 75%; */
+
+  }
+
+  /* speakers */
+
+  .speakers-heading{
+    margin-top:10% ;
+    margin-bottom: 8%;
+  }
+  
+  .speakers-heading h1{
+    font-weight: 700;
+    font-size: 3rem;
+  
+  }
+
+  .btn-group{
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+    
+  }
+
+  .homepage .btn {
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0.8rem;
+    padding: 4px 16px;
+    position: relative;
+    right:10%;
+  }
+  
+  .homepage .btn-participate {
+    background-color: #e62b1e;
+    color: #ffffff;
+    font-size: 0.8rem;
+    border-top-right-radius: 8px 8px !important;
+    border-bottom-right-radius: 8px 8px !important;
+  
+  }
+  
+
+
+  
+.brdrgrp {
+  display: none;
+  position: absolute;
+  border-radius: 8px;
+  background-color: rgba(230, 43, 30, 0.2);
+  width: max-content;
+  margin-top: 5px;
+  margin-left: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+  top: 100%;
+}
+
+.brdrgrp:after {
+  position: absolute;
+  content: "";
+  border-top: 7px solid transparent;
+  border-left: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-right: 7px solid transparent;
+  right: 24%;
+  bottom: 95%;
+}
+
+
+.brdrgrp .btn-attandee {
+  border-radius: 8px;
+  font-size: 0.9rem;
+  border: none;
+  background-color: #121212;
+  border: #e62b1e 1px solid;
+  color: #ffffff;
+  /* padding: 10px 30px; */
+}
+.brdrgrp .btn-participate2 {
+  border-radius: 8px;
+  border: none;
+  background-color:#121212;
+  color: white;
+  border: 1px solid #e62b1e;
+  font-size: 0.9em;
+  /* padding: 10px 30px; */
+}
+
+
+
+  .containers {
+    display: grid;
+    height: 302px;
+    margin: auto;
+    position: relative;
+    width: 95%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+  }
+
+  .single-team {
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 222px;
+    height: 302px;
+  }
+
+  .single-team img {
+    height: 302px;
+    width: 222px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+
+
+
+
+
+  .about-illustration{
+    position: absolute;
+  top: 5%;
+  height: 90%!important;
+  width: 100%!important;
+  left:-5%;  
+  z-index: -1;
+
+  }
+  
+
+
+
+
+  .square {
+    background: #121212;
+    border: 1px #e62b1e solid;
+    border-radius: 8px;
+    width: 85%;
+  }
+
+  .square {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+
+  .about-logo {
+    width: 60%;
+  }
+  
+  .amd-live-logo{
+    margin-top: 15%;
+    
+    
+  }
+  
+  .map-sm-screen{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    visibility: visible;
+    display: block;
+  }
+  .map-bg-screen{
+    display: none;
+    visibility: hidden;
+  }
+
+  .box-3 {
+    padding-top: 10%;
+  }
+
+
+}
