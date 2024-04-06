@@ -25,6 +25,11 @@ body {
 
 /* Navbar------------------------------------------------------- */
 
+.w-75 {
+  max-width:300px
+  max-height:200px
+}
+
 .navbar {
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
