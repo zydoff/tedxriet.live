@@ -1,0 +1,489 @@
+/* custom----------------------------------------------------- */
+
+/* custom----------------------------------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, sans-serif, Arial;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #121212;
+  color: #ffffff;
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100%;
+}
+
+/* ______________________________________________________ */
+
+/* Navbar------------------------------------------------------- */
+
+.navbar {
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
+
+.navbar-custom a {
+  color: #ffffff !important;
+  font-size: 0.9rem;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #ffffff;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #e62b1e;
+
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.hover-underline-animation:hover {
+  color: #ffffff;
+}
+
+.navbar-custom button {
+  border: 1px solid #e62b1e;
+  box-sizing: border-box;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  padding: 10px 20px;
+}
+
+.navbar-custom button:hover {
+  background-color: #e62b1e;
+  transition: 0.3s;
+}
+
+/* .nav-right-illustration{
+        position: absolute;
+        right: 0%;
+        top: -14.01%;
+    transform: rotate(1.99deg);
+    }
+     */
+
+/* illustration01 */
+.illustration-left-homepage {
+  position: absolute;
+  left: 0%;
+  top: -10%;
+  opacity: 1;
+  width: 100%;
+}
+
+
+
+
+
+
+.btn {
+  background-color: transparent;
+  border: .3px solid #e62b1e;
+  transition: .5s;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 1;
+  font-weight: 300;
+  color: #e62b1e;
+ }
+ 
+ .btn::after, .btn::before {
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  transform: skew(90deg) translate(-50%, -50%);
+  position: absolute;
+  inset: 50%;
+  left: 25%;
+  z-index: -1;
+  transition: .5s ease-out;
+  background-color: #e62b1e;
+ }
+ 
+ .btn::before {
+  top: -50%;
+  left: -25%;
+  transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+ }
+ 
+ .btn:hover::before {
+  transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+ }
+ 
+ .btn:hover::after {
+  transform: skew(45deg) translate(-50%, -50%);
+ }
+ 
+ .btn:hover {
+  color: var(--color2);
+ }
+ 
+ .btn:active {
+  filter: brightness(.7);
+  transform: scale(.98);
+ }
+
+
+/* ********************************************************************************************************** */
+/* ____________________________________________SPEAKERS_____________________________________________________ */
+/* ****************************************************************************************************** */
+
+.heading {
+  padding-top: 6%;
+  padding-bottom: 3%;
+  
+}
+
+.heading h5{
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.heading h1{
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+/* Cards--------- */
+
+
+.card__inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+}
+
+.card__inner.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.card__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+}
+
+.card__face--front {
+  background: linear-gradient(
+    180deg,
+    rgba(47, 46, 46, 0.44) 0%,
+    rgba(50, 50, 50, 0.11) 100%
+  );
+  backdrop-filter: blur(13px);
+}
+
+
+.card__face--back {
+  background: linear-gradient(
+    180deg,
+    rgba(47, 46, 46, 0.44) 0%,
+    rgba(50, 50, 50, 0.11) 100%
+  );
+  backdrop-filter: blur(13px);
+  transform: rotateY(180deg);
+}
+
+.card {
+  width: 260px;
+  height: 340px;
+  perspective: 1000px;
+  background: linear-gradient(
+    180deg,
+    rgba(47, 46, 46, 0.44) 0%,
+    rgba(50, 50, 50, 0.11) 100%
+  );
+  backdrop-filter: blur(13px);
+  border-radius: 23px;
+}
+
+
+
+.card-text {
+  opacity: 0.6;
+  font-size: 0.8rem;
+}
+
+
+.card-text-front{
+  padding-left: 4%;
+  padding-right: 4%;
+  opacity: 0.6;
+  text-align: center;
+  font-size: 0.8rem;
+  position: absolute;
+  right: 2%;
+  top: 275px;
+}
+
+
+.card-title-front {
+  position: absolute;
+  font-weight: 700;
+  text-align: center;
+  font-size: 1.5rem;
+  bottom: 18%;
+  left: 20%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.abhijit-heading{
+  position: absolute;
+  left: 0%;
+  right: 2%;
+}
+
+.Kaushik-heading{
+  position: absolute;
+  right: 2%;
+  left: 0%;
+}
+.card-title-back
+{
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+
+.speakers-section .bi {
+  font-size: 1rem;
+}
+
+.img-card {
+  position: absolute;
+  top: -5%;
+  right: 2%;
+
+}
+
+.pavan-img{
+  position: absolute;
+  height: 343px;
+  width: 330px;
+  top: -28%;
+  left: -16%;
+}
+
+.aditi-img{
+  position: absolute;
+  top: -14%;
+  left: -1%;
+  height: 293px;
+  width: 280px;
+
+}
+
+.archie-img{
+  position: absolute;
+  top: -25%;
+  left: -9%;
+  height: 343px;
+  width: 330px;
+}
+
+.bharat-img{
+  padding-bottom: 35%;
+  width: 90%;
+  right: 15%;
+}
+.himanshi-img{
+  position: absolute;
+  top:-1%;
+  left: 2%;
+  height: 260px!important;
+  width: 250px;
+}
+
+
+/* .text-aman{
+  padding-right: 19%;
+} */
+
+.himanshi-head-front{
+
+left: 15%;
+
+}
+
+.himanshi-text-front{
+  padding-right:8% ;
+}
+.text-bharat{
+  padding-right: 19%;
+}
+.card .icon-rotate-btn{
+  position: absolute;
+  right: 5%;
+  top: 2%;
+  border-radius: 16px;
+  padding: 0px;
+  padding: 3px 6px 3px 6px;
+  font-size: 0.7rem;
+}
+
+.card .bi{
+
+  font-size: 1.2rem;
+}
+
+.social-icons{
+  position: absolute;
+  bottom:8%
+}
+
+.card .bi-arrow-repeat{
+  font-size: 0.7rem;
+}
+
+
+
+.card-logo-right{
+  position: absolute;
+  height: 25%;
+  width: 25%;
+  bottom: -7%;
+  right: 5%;
+}
+
+.card a{
+  color: #ffffff;
+  opacity: 0.9;
+  font-size: 0.9rem;
+}
+
+
+/* Icons */
+
+.bi-facebook:hover {
+  color: #4267b2;
+  transform: scale(1.5);
+}
+
+.bi-twitter:hover {
+  color: #00acee;
+}
+
+.bi-youtube:hover {
+  color: #ff0000;
+}
+
+.bi-instagram:hover {
+  color: #bc1888;
+}
+
+.bi-globe:hover{
+  color: #ff0000;
+}
+
+.bi-linkedin:hover{
+  color: #4267b2;
+}
+
+/*________________________________________ FOOTER________________________________________________________________ */
+/* _____________________________________________________%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+
+/* Footer-section */
+
+.illustration-footer {
+  opacity: 0.87;
+  position: absolute;
+}
+
+.footer-section {
+  color: #ffffff;
+  padding-bottom: 8%;
+  background: #000000;
+}
+
+.footer-section h1 {
+  font-size: 2.2rem;
+}
+
+.footer-section .nav-link {
+  color: #ffffff;
+  opacity: 0.6;
+  font-size: 1rem;
+}
+
+.footer-section .box-2 .nav-link {
+  display: block;
+}
+
+
+.footer-section .box-2 .youtube-icon-footer:hover {
+  color: #ff0000;
+}
+
+.footer-section .box-2 .twitter-icon-footer:hover {
+  color: #4267b2;
+}
+
+.footer-section .box-2 .instagram-icon-footer:hover {
+  color: #bc1888;
+}
+
+.input-footer input {
+  opacity: 0.4;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background: transparent;
+  color: white;
+}
+
+.box-3 p{
+  opacity: 0.7;
+}
+
+
+/* __________________________________________________________________________________________________ */
+/*__________________________________RESPONSIVE MOBILE______________________________________________  */
+/* ____________________________________________________________________________________________________ */
+
+@media only screen and (max-width: 480px) {
+  .card {
+    margin-left: 6%;
+  }
+
+  .card-title {
+    font-weight: 700;
+  }
+
+  .card-text {
+    opacity: 0.6;
+    font-size: 0.8rem;
+  }
+}
